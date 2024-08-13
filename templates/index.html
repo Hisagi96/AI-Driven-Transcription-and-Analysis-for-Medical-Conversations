@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM MEOW</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>TEAM MEOW</h1>
+        <p>Transcribe speech and voice recordings to text in no time. Free AI audio-to-text converter for medical diagnosis.</p>
+    </header>
+
+    <main>
+        <div class="upload-container">
+            <h2>Upload your file</h2>
+            <p>Click the Choose File button to get started or drag and drop here to upload.</p>
+            <form method="POST" action="{{ url_for('process') }}" enctype="multipart/form-data">
+                <input type="file" name="file" id="file-input" accept="audio/*">
+                <label for="file-input">Choose File</label>
+                <br><br>
+                <input type="submit" value="Upload and Process" class="submit-button">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>By uploading your file, you are agreeing to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+    </footer>
+</body>
+</html>
