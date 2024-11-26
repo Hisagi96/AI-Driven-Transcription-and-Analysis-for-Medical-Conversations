@@ -41,42 +41,43 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 🚀 Setup
+```
 Clone the repository:
-
-bash
-Copy code
+```bash
 git clone https://github.com/your-repo/ai-driven-transcription.git
 cd ai-driven-transcription
+```
 Install required dependencies:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+```
 Run the application:
-
-bash
-Copy code
+```bash
 python app.py
+```
+
 📋 Usage
 Upload recorded audio files of doctor-patient conversations.
 The system transcribes speech into text and provides detailed analyses.
 Results are integrated into EHRs or exported as CSV/JSON files.
+
 🤝 Contributing
 We welcome contributions to improve this project! Follow these steps:
 
 Fork the repository.
 Create a feature branch:
-bash
-Copy code
+```bash
 git checkout -b feature-xyz
+```
 Commit your changes:
-bash
-Copy code
+```bash
 git commit -am "Add feature XYZ"
+```
 Push the branch:
-bash
-Copy code
+```bash
 git push origin feature-xyz
+```
 Open a Pull Request for review.
 🚧 Challenges and Future Work
 🛡 Data Privacy
